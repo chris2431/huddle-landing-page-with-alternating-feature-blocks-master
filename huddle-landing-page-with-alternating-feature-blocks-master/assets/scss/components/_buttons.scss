@@ -1,0 +1,35 @@
+@mixin button(
+  $paddg: 0.7em 3em,
+  $f-c: whitesmoke,
+  $b-g: hsl(322, 100%, 66%),
+  $b-rad: 2em,
+  $font-w: 700,
+  $width: 50%,
+  $height: 5%
+) {
+  padding: $paddg;
+  color: $f-c;
+  background-color: $b-g;
+  border-radius: $b-rad;
+  font-weight: $font-w;
+  width: $width;
+  height: $height;
+}
+
+@mixin header-link(
+  $paddg: 0.4em 1.5em,
+  $f-c: black,
+  $b-g: white,
+  $b-rad: 2em,
+  $box-sh: 0.5px 0.5px 9px rgba(0, 0, 0, .1),
+  $f-w: 700,
+  $f-s: 0.9rem
+) {
+  padding: $paddg;
+  color: $f-c;
+  background-color: $b-g;
+  border-radius: $b-rad;
+  box-shadow: $box-sh;
+  font-weight: $f-w;
+  font-size: $f-s;
+}
